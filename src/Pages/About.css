@@ -1,0 +1,46 @@
+.about{
+
+}
+
+/*==================
+    start welcome-to 
+===================*/
+
+.about section.welcome-to{
+    width: 100%;
+    min-height: 65vh;
+}
+
+.about section.welcome-to .img{
+    width: 100%;
+    height: auto;
+}
+
+.about section.welcome-to .img img{
+    width: 90%;
+
+}
+
+.about section.welcome-to .text{
+
+}
+
+.about section.welcome-to .text h5{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.about section.welcome-to .text p{
+    font-size: 17px;
+    color: var(--main-color);
+}
+.about section.welcome-to .text h5{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/*==================
+    start welcome-to 
+===================*/
+

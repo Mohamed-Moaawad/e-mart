@@ -1,0 +1,35 @@
+.header-page{
+    width: 100%;
+    padding: 18px 0;
+    background-color: var(--const-color);
+    margin: 65px 0;
+}
+
+.header-page div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-page h6{
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--text-color);
+}
+
+.header-page h6 a{
+    text-decoration: none;
+    color: #fff;
+    transition: all .3s;
+    margin-right: 5px;
+}
+
+.header-page h6 a:hover{
+    color: var(--second-color);
+}
+
+.header-page h6 span{
+    color: var(--text-color);
+    margin-left: 5px;
+}

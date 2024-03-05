@@ -1,0 +1,101 @@
+
+/*==================
+    start Mett 
+===================*/
+section.meet-page{
+    width: 100%;
+    min-height: 85vh;
+}
+
+section.meet-page figure{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+section.meet-page figure img{
+    width: 100%;
+}
+
+section.meet-page figure figcaption{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00000082;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    transition: all .5s;
+    padding: 20px;
+    opacity: 0;
+}
+
+section.meet-page figure:hover figcaption{
+    opacity: 1;
+}
+section.meet-page figure:hover figcaption .info {
+    transform: translateX(0px);
+}
+section.meet-page figure:hover figcaption .social{
+    transform: translateY(0px);
+}
+
+section.meet-page figure figcaption .info {
+    transform: translateX(-70px);
+    transition: all .3s;
+}
+
+section.meet-page figure figcaption .info h6{
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 600;
+    font-size: 23px;
+    margin: 0;
+}   
+section.meet-page figure figcaption .info span{
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 400;
+
+}
+
+section.meet-page figure figcaption .social{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transform: translateY(50px);
+    transition: all .3s;
+}
+
+section.meet-page figure figcaption .social .icon{
+    width: 35px;
+    height: 35px;
+    background-color: var(--second-color);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+section.meet-page figure figcaption .social .icon:nth-child(1):hover{
+    background-color: #1da1f2;
+}
+section.meet-page figure figcaption .social .icon:nth-child(2):hover{
+    background-color: #1877f2;
+}
+section.meet-page figure figcaption .social .icon:nth-child(3):hover{
+    background-color: #dd4b39;
+}
+
+section.meet-page figure figcaption .social .icon svg{
+    color: #fff;
+}
+
+/*==================
+    end Meet
+===================*/

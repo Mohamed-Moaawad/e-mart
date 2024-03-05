@@ -1,0 +1,50 @@
+:root{
+  --main-color: #333;
+  --second-color: #3F51B5;
+  --hover-color: #233390;
+  --const-color: #000000f3;
+  --text-color: #eeeeee8d;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #dfdfdf; 
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  background: var(--second-color);
+  border-radius:10px;
+
+}
+::-webkit-scrollbar-thumb:hover {
+  
+  background: var(--hover-color); 
+} 
+
+/* text title in all sections */
+div.title-text{
+  width: 100%;
+  text-align: center;
+  
+}
+div.title-text h3{
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+div.title-text span{
+  display: inline-block;
+  width: 80px;
+  height: 2px;
+  background-color: var(--second-color);
+  margin-top: 30px;
+}
+/* text title in all sections */

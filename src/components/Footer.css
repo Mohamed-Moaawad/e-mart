@@ -1,0 +1,144 @@
+footer{
+    width: 100%;
+    min-height: 60vh;
+    padding: 60px 0;
+    background-color: var(--const-color);
+    position: relative;
+}
+
+footer h5{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* footer ul li {
+} */
+
+footer ul li a:hover{
+    color: var(--second-color);
+}
+
+footer ul li a{
+    color: var(--text-color);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .3s;
+}
+
+footer .footer-links ul li{
+    margin: 12px 0;
+}
+
+
+footer .footer-contact ul li{
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+}
+
+footer .footer-contact ul li span{
+    width: 30px;
+    height: 30px;
+    background: var(--second-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+footer .footer-contact ul li span svg{
+    color: #fff;
+}
+
+footer .footer-contact ul li div p{
+    margin: 0;
+    color: var(--text-color);
+}
+
+footer .footer-contact ul li div.mail{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-tags ul li{
+    display: inline-block;
+    border: 1px solid var(--text-color);
+    border-radius: 2px;
+    padding: 5px 8px;
+    margin: 2px;
+}
+
+footer .footer-news .news{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer .footer-news .news p{
+    color: #eeeeee8d;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+footer .footer-news .news input{
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    outline: none;
+    border: none;
+}
+
+footer .footer-news .news input:focus{
+    border: 2px solid var(--second-color);
+}
+
+footer .footer-news .news button{
+    width: 50%;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background: var(--second-color);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+footer .copyright{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #3939395c;
+}
+
+footer .copyright .container-copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 12px 0;
+}
+
+
+footer .copyright p{
+    color: var(--text-color);
+}
+
+footer .copyright p span{
+    color: #fff;
+}
+
+footer .copyright ul li{
+    display: inline-block;
+    margin: 0 2px;
+}

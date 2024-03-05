@@ -1,0 +1,427 @@
+.home{
+    
+}
+
+/*==============
+    start header 
+================= */
+
+.home header{
+    width: 100%;
+    min-height: calc(70vh - 46px);
+    background-image: url(../../public/images/main-banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.home header span{
+    text-transform: capitalize;
+    color: #555;
+    font-weight: 600;
+}
+
+.home header h2{
+    margin: 15px 0;
+    font-weight: 700;
+    font-size: 2.3rem;
+    color: var(--main-color);
+    letter-spacing: 1px;
+}
+
+.home header h6{
+    font-weight: 500;
+    color: #555;
+    word-spacing: 2px;
+}
+
+.home header .btns{
+    margin-top: 35px;
+}
+.home header .btns a{
+    display: inline-block;
+    width: 170px;
+    border: 0;
+    background-color: var(--second-color);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: center;
+    padding: 9px 0;
+    text-decoration: none;
+}
+
+.home header .btns a:hover{
+    background-color: var(--hover-color);
+}
+
+/*=================
+    end header 
+=================*/
+
+
+/*=================
+    start types 
+=================*/
+
+.home section.types{
+    width: 100%;
+    min-height: 50vh;
+    padding: 60px 0;
+}
+
+.home section.types .card-box{
+    width: 100%;
+    height: auto;
+    background-color: #555;
+    position: relative;
+    overflow: hidden;
+}
+
+.home section.types .card-box img{
+    width: 100%;
+    height: 100%;
+    transition: all .4s;
+}
+
+.home section.types .card-box .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.home section.types .card-box .text .mens{
+    width: 80%;
+    padding: 15px;
+    background-color: #f3f3f37c;
+    backdrop-filter: blur(2px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.home section.types .card-box .text .mens h4{
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 100%;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.home section.types .card-box .text .mens span{
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.home section.types .card-box .text a{
+    width: 140px;
+    padding: 9px 0;
+    border: none;
+    background-color: var(--second-color);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 30px;
+    position: relative;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.home section.types .card-box .text a:hover{
+    background-color: var(--hover-color);
+}
+
+.home section.types .card-box:hover img{
+    transform: scale(1.05);
+}
+
+.home section.types .col-box3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home section.types .card-box.box3{
+    height: 48%;
+} 
+
+/*================= 
+    end types 
+=================*/
+
+
+/*================= 
+    start arrivals 
+=================*/
+
+.home section.arrivals{
+    width: 100%;
+    min-height: 100vh;
+    padding: 60px 0;
+}
+
+.home section.arrivals .products{
+    width: 100%;
+}
+
+/*================= 
+    end arrivals 
+=================*/
+
+
+/*================= 
+    start bargains 
+=================*/
+
+
+.home section.bargains{
+    width: 100%;
+    min-height: 50vh;
+    margin: 50px 0;
+    background-image: url(../../public/images/dsc-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home section.bargains .text{
+    text-align: center;
+}
+
+.home section.bargains .text span{
+    color: #fff;
+    text-transform: uppercase;
+}
+.home section.bargains .text h2{
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 3rem;
+}
+.home section.bargains .text a{
+    display: inline-block;
+    width: 175px;
+    padding: 12px 0;
+    background-color: var(--second-color);
+    text-decoration: none;
+    color: #fff;
+    margin-top: 30px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+
+/*================= 
+    end bargains 
+=================*/
+
+
+
+/*================= 
+    start slider 
+=================*/
+
+.home section.slider-products{
+    width: 100%;
+    min-height: 70vh;
+    padding: 40px 0;
+}
+
+
+.home section.slider-products .slider{
+    padding: 40px 0;
+}
+
+.home .slider-products .swiper {
+    width: 800px;
+    width: 90%;
+}
+.home .slider-products .swiper-slide {
+    /* line-height: 300px; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .slider-products .swiper-slide .product-component {
+    width: 85%;
+    height: 400px;
+}
+
+@media only screen and (max-width: 768px){
+    .home .slider-products .swiper-slide .product-component .product-text h5,
+    .home .slider-products .swiper-slide .product-component .product-text div.star-icons{
+        display: none;
+    }
+}
+
+.home h3.error-data {
+    text-align: center;
+    color: red;
+    padding: 20px 0;
+}
+/*================= 
+    end slider 
+=================*/
+
+/*================= 
+    start bg-image 
+=================*/
+
+.home section.bg-image{
+    width: 100%;
+    min-height: 45vh;
+    margin: 30px 0;
+    background-image: url(../../public/images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.home section.bg-image .text{
+    width: 50%;
+}
+
+@media only screen and (max-width:991px){
+    .home section.bg-image .text{
+        width: 80%;
+    }
+}
+
+.home section.bg-image .text h3{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.home section.bg-image .text p{
+    margin: 20px 0;
+    color: var(--main-color);
+}
+
+.home section.bg-image .text button{
+    width: 175px;
+    height: 40px;
+    border: none;
+    background-color: var(--second-color);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+/*================= 
+    end bg-image 
+=================*/
+
+
+/*================= 
+    start cards-blog 
+=================*/
+
+.home section.blog{
+    width: 100%;
+    min-height: 85vh;
+    margin: 60px 0;
+
+}
+
+.home section.blog .cards{
+    margin: 50px 0;
+}
+
+.home section.blog .cards .img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.home section.blog .cards .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .5s;
+    
+}
+
+.home section.blog .cards .img::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #15151557;
+    opacity: 0;
+    transition: all .5s;
+
+}
+
+.home section.blog .cards .img:hover img{
+    transform: scale(1.1);
+}
+
+.home section.blog .cards .img:hover::after{
+    opacity: 1;
+}
+
+.home section.blog .cards .text{
+    position: relative;
+    padding: 15px;
+}
+
+.home section.blog .cards .text span{
+    background-color: var(--second-color);
+    color: #fff;
+    padding: 6px 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border: 2px solid #fff;
+    position: absolute;
+    top: -20px;
+    left: 10px;
+}
+
+
+.home section.blog .cards .text h5{
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.home section.blog .cards .text p{
+    font-size: 13px;
+}
+
+.home section.blog .cards .text button{
+    width: 100px;
+    height: 35px;
+    border: 1px solid rgba(176, 176, 176, 0.576);
+    text-transform: capitalize;
+
+}
+
+/*================= 
+    end cards-blog  
+=================*/
+

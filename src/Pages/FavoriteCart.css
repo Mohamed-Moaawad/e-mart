@@ -1,0 +1,43 @@
+.favorite-page{
+    
+}
+
+.favorite-page .content{
+    width: 100%;
+    min-height: 50vh;
+}
+
+.favorite-page .content div.back{
+    text-transform: capitalize;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.favorite-page .content div.back a{
+    display: inline-block;
+    width: 170px;
+    padding: 8px 0;
+    background-color: var(--second-color);
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.favorite-page .content div.back a:hover{
+    background-color: var(--hover-color);
+}
+
+.favorite-page .content .btn-delete{
+    width: 100%;
+    padding: 8px 0;
+    background-color: var(--second-color);
+    border: none;
+    color: #fff;
+    text-transform: capitalize;
+
+}
+
+.favorite-page .content .btn-delete:hover{
+    background-color: var(--hover-color);
+}

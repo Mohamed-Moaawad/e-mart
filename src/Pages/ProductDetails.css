@@ -1,0 +1,82 @@
+.product-details{
+
+}
+
+.product-details .content{
+    width: 100%;
+    min-height: 60vh;
+
+}
+
+.product-details .content .img{
+    width: 80%;
+    height: auto;
+}
+
+.product-details .content .img img{
+    width: 100%;
+    
+}
+
+.product-details .content .text{
+    padding: 0 20px;
+}
+
+.product-details .content .text h3{
+    text-transform: capitalize;
+    font-weight: 600;
+
+}
+
+.product-details .content .text h5{
+    font-weight: 700;
+    color: #555;
+    margin: 25px 0;
+}
+
+.product-details .content .text h6{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 15px 0;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.product-details .content .text h6::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1.5px;
+    background-color: var(--second-color);
+    left: 0;
+    bottom: 0;
+}
+
+
+.product-details .content .text p{
+    margin: 30px 0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+}
+
+.product-details .content .text h4{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.product-details .content .text button{
+    width: 170px;
+    padding: 7px 0;
+    border: none;
+    background-color: var(--second-color);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.product-details .content .text button:hover{
+    background-color:var(--hover-color);
+}

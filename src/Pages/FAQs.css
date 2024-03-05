@@ -1,0 +1,56 @@
+.faqs-page{
+
+}
+
+.faqs-page .contect{
+    
+}
+
+.faqs-page .contect .accordion-item{
+    margin-bottom: 20px ;
+    box-shadow: 0 0 5px #4444443a;
+}
+
+.faqs-page .contect .accordion-item .accordion-header button{
+    background-color: #3F51B5;
+    color: #fff;
+}
+
+.faqs-page .contect .accordion-item span{
+    margin-right: 10px;
+    font-size: 19px;
+    border-right: 1px solid #fff;
+    padding-right: 10px;
+}
+
+.faqs-page .contect .still-have-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0;
+    border: 1px solid #d6d6d6;
+    padding: 65px 0;
+}
+
+.faqs-page .contect .still-have-box h3{
+    text-transform: capitalize;
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.faqs-page .contect .still-have-box a{
+    width: 170px;
+    padding: 10px 0;
+    background-color: var(--second-color);
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.faqs-page .contect .still-have-box a:hover{
+    background-color: var(--hover-color);
+}

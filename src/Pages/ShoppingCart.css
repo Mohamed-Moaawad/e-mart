@@ -1,0 +1,182 @@
+.shopping-cart-page{
+
+}
+
+.shopping-cart-page .content{
+    width: 100%;
+    min-height: 80vh;
+}
+
+.shopping-cart-page .content .table-parent-box{
+    overflow-x: auto;
+}
+
+.shopping-cart-page .content .table-parent-box::-webkit-scrollbar{
+    height: 7.5px;
+}
+
+.shopping-cart-page .content table th{
+    background-color: var(--second-color);
+    color: #fff;
+    border: 1px solid #0000001b;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.shopping-cart-page .content table td{
+    border: 1px solid #0000001b;
+    text-align: center;
+    position: relative;
+    padding: 8px;
+}
+
+.shopping-cart-page .content table td div{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.shopping-cart-page .content table td:nth-child(1){
+    width: 130px;
+}
+.shopping-cart-page .content table td:nth-child(2){
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.shopping-cart-page .content table td:nth-child(1) img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.shopping-cart-page .content table td:nth-child(5),
+.shopping-cart-page .content table td:nth-child(3){
+    font-size: 17px;
+    font-weight: 600;
+    color: #444;
+}
+
+.shopping-cart-page .content table td:nth-child(4){
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+}
+
+.shopping-cart-page .content table td.quantity button{
+    width: 30px;
+    text-align: center;
+    background-color: var(--second-color);
+    color: #fff;
+    font-size: 22px;
+    position: absolute;
+    z-index: 1;
+}
+
+.shopping-cart-page .content table td.quantity button:nth-child(1){
+    top: 50%;
+    left: 45%;
+    transform: translate(-100%, -50%);
+}
+.shopping-cart-page .content table td.quantity button:nth-child(3){
+    top: 50%;
+    right: 45%;
+    transform: translate(100%, -50%);
+}
+
+.shopping-cart-page .content table td.quantity button:hover{
+    background-color: var(--hover-color);
+}
+
+
+.shopping-cart-page .content table td button{
+    border: none;
+    cursor: pointer;
+}
+
+.shopping-cart-page .content table td button svg{
+    font-size: 25px;
+    color: rgb(190, 1, 1);
+}
+
+.shopping-cart-page .content table td button:hover svg{
+    color: red;
+}
+
+.shopping-cart-page .content button.btn-delete-all{
+    width: 150px;
+    padding: 8px 0;
+    border: none;
+    background-color: var(--second-color);
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.shopping-cart-page .content button.btn-delete-all:hover{
+    background-color: var(--hover-color);
+}
+
+
+.shopping-cart-page .content .total-box{
+    width: 40%;
+    box-shadow: 0 0 10px #cacaca;
+    padding: 20px;
+    margin-top: 30px;
+}
+@media only screen and (max-width:768px){
+    .shopping-cart-page .content .total-box{
+        width: 90%;
+    }
+}
+
+.shopping-cart-page .content .total-box h4{
+    text-transform: capitalize;
+    font-size: 22px;
+}
+
+.shopping-cart-page .content .total-box ul{
+    padding: 0;
+    list-style: none;
+    margin: 19px 0;
+}
+
+.shopping-cart-page .content .total-box ul li{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+    border: 1px solid #dfdfdfd2;
+}
+
+.shopping-cart-page .content .total-box ul li h5{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+.shopping-cart-page .content .total-box ul li span{
+    font-weight: 600;
+    color: #444;
+}
+
+.shopping-cart-page .content .total-box ul li:nth-child(3) h5{
+    color: #000;
+}
+.shopping-cart-page .content .total-box ul li:nth-child(3) span{
+    color: #000;
+}
+
+.shopping-cart-page .content .total-box a{
+    display: inline-block;
+    width: 40%;
+    background-color: var(--second-color);
+    padding: 8px 0;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.shopping-cart-page .content .total-box a:hover{
+    background-color: var(--hover-color);
+}

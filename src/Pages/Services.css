@@ -1,0 +1,31 @@
+.services-page{
+    
+}
+.services-page .content{
+    width: 100%;
+    min-height: 70vh;
+}
+
+.services-page .content .services-box{
+    display: flex;
+    
+}
+
+.services-page .content .services-box .icon svg{
+    font-size: 30px;
+    color: var(--second-color);
+
+}
+
+.services-page .content .services-box .text{
+    margin-left: 10px;
+}
+
+.services-page .content .services-box .text h5{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.services-page .content .services-box .text p{
+    font-size: 14px;
+}

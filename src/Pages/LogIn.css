@@ -1,0 +1,173 @@
+.log-in-and-sign-up-page{
+    width: 100%;
+    height: 100vh;
+}
+
+.log-in-and-sign-up-page .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-in-and-sign-up-page .content .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.log-in-and-sign-up-page .content .form form{
+    width: 60%;
+    padding: 30px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 5px 5px #b1b1b176;
+}
+
+@media only screen and (max-width: 678px){
+    .log-in-and-sign-up-page .content .form form{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .log-in-and-sign-up-page .content .form form{
+        width: 95%;
+    }
+}
+
+.log-in-and-sign-up-page .content .form form .text{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.log-in-and-sign-up-page .content .form form .text h3{
+    font-weight: 700;
+    color: var(--main-color);
+    font-size: 35px;
+}
+
+.log-in-and-sign-up-page .content .form form .text p{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 500px){
+    .log-in-and-sign-up-page .content .form form .text h3{
+        font-size: 25px;
+    }
+    
+    .log-in-and-sign-up-page .content .form form .text p{
+        font-size: 12px;
+        text-transform: capitalize;
+    }
+    
+}
+
+
+
+.log-in-and-sign-up-page .content .form form input{
+    width: 100%;
+    padding: 13.5px;
+    margin: 14px 0;
+    outline: none;
+    border: 1px solid #cecece;
+    transition: all .4s;
+}
+
+.log-in-and-sign-up-page .content .form form input:focus{
+    border: 1px solid #1763cd64;
+    outline: 1.5px solid #1d74edd5;
+    box-shadow: 0 0 5px 2px #1763cd64;
+}
+
+.log-in-and-sign-up-page .content .form form .pass{
+    width: 100%;
+    height: 53px;
+    position: relative;
+    margin: 14px 0 10px;
+
+}
+
+.log-in-and-sign-up-page .content .form form .pass input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+}
+
+.log-in-and-sign-up-page .content .form form .pass div.eye{
+    position: relative;
+    left: 97%;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translate( -100%,-50%);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-in-and-sign-up-page .content .form form .pass div.eye span{
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.log-in-and-sign-up-page .content .form form .pass div.eye span:nth-child(1){
+    display: none;
+}
+
+
+.log-in-and-sign-up-page .content .form form button[type="submit"]{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: var(--second-color);
+    color: #fff;
+    margin-top: 35px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.log-in-and-sign-up-page .content .form form button[type="submit"]:hover{
+    background-color: var(--hover-color);
+}
+
+
+.log-in-and-sign-up-page .content .form form p{
+    font-weight: 600;
+    color: #444;
+    margin-top: 30px;
+}
+
+.log-in-and-sign-up-page .content .form form p a{
+    text-transform: capitalize;
+    margin-left: 4px;
+}
+
+
+.log-in-and-sign-up-page .content .img{
+    width: 100%;
+    height: 100%;
+    background-color: #BBCFFF;
+    position: relative;
+}
+
+.log-in-and-sign-up-page .content .img img{
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.log-in-and-sign-up-page .content .form form p.error{
+    font-size: 15px;
+    font-weight: 400;
+    color: #e20000;
+    margin: 3px 0;
+    text-align: left;
+}

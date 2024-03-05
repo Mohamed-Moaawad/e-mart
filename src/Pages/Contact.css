@@ -1,0 +1,132 @@
+.contact{
+
+}
+
+.contact section.content-all{
+    width: 100%;
+    
+}
+
+/* ====================
+    start content info 
+=======================*/
+
+.contact section.content-all .content-info{
+    width: 100%;
+    padding: 20px 0;
+}
+
+.contact section.content-all .content-info .item{
+    width: 100%;
+    
+}
+.contact section.content-all .content-info .item h5{
+    text-transform: capitalize;
+    font-weight: 700;
+    color: var(--main-color);
+    
+}
+
+.contact section.content-all .content-info .item .icon{
+    display: flex;
+    align-items: center;
+}
+
+.contact section.content-all .content-info .item .icon svg{
+    font-size: 35px;
+    color: var(--second-color);
+}
+
+.contact section.content-all .content-info .item .icon p{
+    margin: 0;
+    text-transform: capitalize;
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact section.content-all .content-info .item .icon p a{
+    text-decoration: none;
+    color: #000;
+    text-transform: lowercase;
+}
+.contact section.content-all .content-info .item .icon p a:hover{
+    color: var(--second-color);
+}
+
+/* ====================
+    end content info 
+======================= */
+
+
+/* ====================
+    end form
+======================= */
+.contact .form{
+    width: 100%;
+    min-height: 80vh;
+    margin-top: 60px;
+}
+
+.contact .form div.title-text span{
+    width: 100%;
+    display: inline-block;
+    height: 2px;
+    background-color: transparent;
+    margin-top: 0;
+}
+
+
+.contact .form form{
+    width: 100%;
+    margin: 95px 0;
+}
+
+.contact .form form input{
+    width: 100%;
+    padding: 12px 20px;
+    outline: none;
+    margin-bottom: 19px;
+}
+
+.contact .form form input:focus{
+    outline: 1.5px solid blue;
+    border-color: transparent;
+}
+
+.contact .form form textarea{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 12px 20px;
+}
+.contact .form form textarea:focus{
+    outline: 1.5px solid blue;
+    border-color: transparent;
+}
+
+.contact .form form button{
+    width: 170px;
+    height: 40px;
+    border: none;
+    background-color: var(--second-color);
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.contact .map{
+    width: 100%;
+    height: 45vh;
+}
+
+.contact .map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ====================
+    end form 
+======================= */

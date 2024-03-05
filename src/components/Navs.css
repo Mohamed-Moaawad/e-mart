@@ -1,0 +1,391 @@
+nav{
+    box-shadow: 0 0 10px #c5c4c4;
+    padding: 9px 0;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+/* =========
+    start logo
+===========*/
+nav .log{
+    width: 100%;
+}
+nav .log img{
+    width: 60%;
+}
+
+@media only screen and (max-width: 700px){
+    nav .log img{
+        width: 80%;
+    }
+}
+
+/* =========
+    end logo
+===========*/
+
+/* =========
+    start links
+===========*/
+nav .links{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 80;
+}
+
+nav .links-box .links h5{
+    display: none;
+}
+
+nav .links ul{
+    padding: 0;
+    margin: 0;
+    transition: all .5s;
+    position: relative;
+}
+
+nav .links ul li{
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 0 5px;
+    list-style: none;
+} 
+nav .links ul li span{
+    display: none;
+}
+
+nav .links ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    color:var(--main-color);
+
+}
+
+nav .links-box .links ul li a svg{
+    display: none;
+}
+
+@media only screen and (max-width:991px){
+    nav .links-box{
+        position: absolute;
+        background-color: rgb(245, 245, 245);
+        width: 100%;
+        height: 100vh;
+        left: -100%;
+        top: 48.25px;;
+        z-index: 9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .5s;
+    }
+    nav .links-box .links{
+        justify-content: start;
+    }
+    nav .links-box .links ul{
+        padding-left: 20px;
+    }
+    nav .links-box .links ul li{
+        display: block;
+        margin: 15px 0;
+    }
+    
+    nav .links-box .links ul li a{
+        font-size: 25px;
+        transition: all .5s;
+    }
+    nav .links-box .links ul li a svg{
+        display: unset;
+        font-size: 18px;
+        transform: translateY(-2px);
+    }
+
+    nav .links ul li span{
+        display: inline;
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--main-color);
+        margin-right: 5px;
+        opacity: 0.5;
+    }
+    nav .links-box .links ul li:hover a{
+        color: var(--second-color);
+    }
+    
+}
+
+.open-menu{
+    left: 0% !important;
+}
+
+nav .links-box .links ul li.li-pages{
+    position: relative;
+}
+
+@media (min-width:992px){
+    nav .links-box .links ul li.li-pages:hover ul{
+        top: 100%;
+        opacity: 1;
+        pointer-events: unset;
+    }
+}
+nav .links-box .links ul li.li-pages ul{
+    position: absolute;
+    top: 130%;
+    list-style: none;
+    padding: 15px;
+    background-color: #fff;
+    border-top: 2px solid var(--second-color);
+    border-radius: 3px;
+    min-width: 200px;
+    transition: all .7s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+nav .links-box .links ul li.li-pages ul li{
+    display: block;
+    margin: 10px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+nav .links-box .links ul li.li-pages ul li::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #3f51b524;
+    left: 0;
+    bottom: 100%;
+    transition: all .5s;
+    z-index: 98;
+}
+
+@media (min-width:992px){
+    nav .links-box .links ul li.li-pages ul li:hover::after{
+        bottom: 0;
+    }
+    
+}
+
+nav .links-box .links ul li.li-pages ul li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--main-color);
+    transition: all 1s;
+    position: relative;
+    z-index: 99;
+}
+
+
+nav .links-box .links ul li.li-pages ul li:hover a{
+    color: var(--second-color);
+}
+
+@media only screen and (max-width:991px){
+    nav .links-box .links{
+        position: relative;
+    }
+    nav .links-box .links ul li.li-pages{
+        position: unset;
+    }
+    nav .links-box .links ul li.li-pages ul{
+        opacity: 1;
+        top: 0%;
+        left: 0%;
+        transform: translateX(-100%);
+        background-color: transparent;
+        min-width: 300px;
+        border: none;
+        pointer-events: unset;
+        
+    }
+    nav .links-box .links h5{
+        display: unset;
+        margin: 20px;
+        cursor: pointer;
+        text-transform: capitalize;
+        position: absolute;
+        top: 20%;
+        transform: translateY(-0%);
+        left: -200px;
+        transition: all .8s;
+    }
+    nav .links-box .links h5 svg{
+        transition: all .3s;
+    }
+    nav .links-box .links h5:hover svg{
+        transform: translateX(-5px);
+    }
+    
+    nav .links-box .links ul li.li-pages ul li{
+        margin: 0;
+        padding: 8px 15px;
+        display: flex;
+        align-items: center;
+    }
+    nav .links-box .links ul li.li-pages ul li a{
+        font-size: 25px;
+        font-weight: 400;
+    }
+} 
+
+.go-to-left{
+    transform: translateX(-200%) !important;
+}
+.go-to-right{
+    transform: translateX(115%) !important;
+}
+
+/* =========
+    end links
+===========*/
+
+/* =========
+    start log-icons
+===========*/
+nav .log-icons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .log-icons .log-in {
+    margin-right: 10px;
+
+}
+
+nav .log-icons .log-in a{
+    text-decoration: none;
+    color: var(--main-color);
+    margin-right: 10px;
+}
+
+nav .log-icons .cart-fav{
+    display: flex;
+}
+
+nav .log-icons .cart-fav a{
+    width: 35px;
+    height: 35px;
+    margin: 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+    transition: all .7s;
+    border-radius: 2px;
+    position: relative;
+    text-decoration: none;
+}
+
+nav .log-icons .cart-fav a svg{
+    color: var(--main-color);
+    font-size: 16px;
+    transition: all .7s;
+}
+
+nav .log-icons .cart-fav a:hover{
+    background-color: var(--second-color);
+    border-color: var(--second-color);
+}
+nav .log-icons .cart-fav a:hover svg{
+    color: #fff;
+}
+nav .log-icons .cart-fav a:nth-child(1):hover svg{
+    color: red; 
+}
+
+nav .log-icons .cart-fav a span{
+    display: flex;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 17px;
+    height: 17px;
+    background-color: var(--second-color);
+    color: #fff;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 400;
+
+}
+
+@media only screen and (max-width: 500px){
+    nav .log-icons .cart-fav a{
+        width: 27px;
+        height: 27px;
+    }
+}
+/* =========
+    end log-icons
+===========*/
+
+/* =========
+    start menu
+===========*/
+nav .menu-box{
+    overflow: hidden;
+    position: relative;
+}
+
+
+nav .menu-box .menu{
+    width: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+nav .menu-box input[type='checkbox']{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    display: block;
+    z-index: 5;
+    cursor: pointer;
+}
+
+nav .menu-box .menu span{
+    width: 100%;
+    height: 2px;
+    background-color: var(--main-color);
+    margin: 4px 0;
+    border-radius: 30px;
+    transition: all .6s;
+}
+
+nav .menu-box input[type='checkbox']:checked ~ .menu .spn1{
+    transform: rotate(30deg);
+    transform-origin: 11% 0%;
+}
+nav .menu-box input[type='checkbox']:checked ~ .menu .spn2{
+    transform: translateX(100px);
+}
+nav .menu-box input[type='checkbox']:checked ~ .menu .spn3{
+    transform: rotate(-30deg);
+    transform-origin: -15% 100%;
+}
+/* =========
+    end menu
+===========*/
+
